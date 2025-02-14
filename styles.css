@@ -1,0 +1,853 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #d19e8a; 
+  /* padding: 10px 0; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* or a very light shade */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #d19e8a;
+    padding: 15px 0;
+    text-align: center;
+}
+  
+.navbar__container a{
+    /* color: red;*/
+    color:black;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Verdana', 'sans-serif';
+    font-size: 1.2rem;
+    /* font-size: 2vw; */
+    text-decoration: none;
+}
+/* .navbar__container{
+    display : flex;
+    color: #333;
+    justify-content: space-between;
+    background-color: #d19e8a;
+    padding: 0px 10px 0px 10px;
+} */
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d19e8a;
+    padding: 10px 20px; /* Reduce padding for better alignment */
+}
+
+
+.navbar__item a{
+    color:black;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Verdana', 'sans-serif';
+    font-size: 1.2rem;
+    /* font-size: 3vw; */
+    text-decoration: none;
+    transition: color 0.3s ease;                  
+}
+
+.navbar__item a:hover{
+    color: #007BFF; 
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+li{
+    display:inline;
+    padding:10px;
+
+}
+
+.hero {
+    background-color: #d19e8a;
+    /* width: 100%; */
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 2rem 2rem;
+    /* color: #fff;  */
+    color:black;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); */
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 500px;
+}
+  
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+  
+.hero-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+  
+.hero-content p {
+    font-size: 1.1rem;
+}
+
+.hero-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 2rem; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+  
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+/* About Section Container */
+.about {
+    /* padding: 4rem 1rem; */
+    text-align: center; 
+    padding-top: 20px; 
+    margin-top: -30px;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 10px; 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* margin: 0rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 2rem; */
+    max-width: 1100px;
+    padding-top: 0px;
+    margin-top: -30px;
+}
+
+.about-box {
+    display: flex;
+    flex:1;
+    margin-right: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4% auto;
+    padding: 2rem;
+    max-width: 1000px;
+}
+
+.about-box-left {
+    text-align: left;
+    background-color: rgb(227, 157, 127);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 70%; */
+}
+
+.about-box-left p {
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.6;
+    color: black;
+}
+
+.about-box-left p a u {
+    color: blueviolet;
+}
+
+.about-box-right {
+    text-align: right;
+    padding: 20px 50px;
+}
+  
+  /* The heading for "About Me" */
+.about h2 {
+    margin-bottom: 1rem; 
+    font-size: 2.5rem;  
+    font-family: 'Segoe UI';
+}
+
+.about-text {
+    background: #e39d7f;
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+}
+  
+.about-text a {
+    color: blueviolet;
+}
+  
+.about-skills img {
+    max-width: 300px;
+}
+
+/* Skills Cloud Section */
+#skills-cloud {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(227, 157, 127);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Image Animation */
+.animated-skills {
+    width: 100%;
+    max-width: 400px;
+    animation: rotateFloat 6s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.animated-skills:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes Animation */
+@keyframes rotateFloat {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(5deg) translateY(-10px);
+    }
+    50%{
+        transform: rotate(5deg) translateX(-10px);
+    }
+    100% {
+        transform: rotate(0deg) translateY(0px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, #skills-cloud {
+        width: 100%;
+    }
+}
+  
+  /* The peach box */
+/* .about-box {
+    background-color: #d19e8a;   
+    border-radius: 15px;         
+    padding: 2rem;               
+    max-width: 800px;           
+    margin: 2rem auto;
+    left: 30px; 
+    right: 50px;             
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    color: #000;                 
+} */
+  
+/* .about-box p {
+    margin-bottom: 1rem;   
+}
+  
+.about-box a {
+    color: #714f4f;        
+} */
+  
+.about-box a:hover {
+    text-decoration: underline; 
+}
+
+/* Experience Section */
+.exp-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgb(227, 157, 127);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.comcast-logo {
+    width: 60px; /* Adjust the size as needed */
+    height: auto;
+    display: inline-block;
+}
+
+/* .container{
+    background: #003B70;
+} */
+
+/* Sidebar */
+.exp-sidebar {
+    width: 30%;
+    padding: 1.5rem;
+    background-color: rgb(210, 140, 110);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-item {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.exp-item:hover {
+    background: rgb(255, 235, 205);
+}
+
+.exp-item.active {
+    background: white;
+    color: black;
+    border-left: 4px solid #003B70;
+}
+
+/* Experience Content */
+.exp-content {
+    width: 70%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.exp-details h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.company {
+    color: #003B70;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.content {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.content li {
+    margin-bottom: 10px;
+}
+
+/* Tech Stack Badges */
+.techStack {
+    margin-top: 15px;
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+/* new css */
+/* EXPERIENCE TIMELINE */
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f6d7c3; /* Added a soft background color */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    background: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Timeline Icons */
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #d19e8a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Timeline Content */
+.timeline-content {
+    width: 45%;
+    background: white;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-content.left {
+    text-align: right;
+    margin-right: auto;
+}
+
+.timeline-content.right {
+    text-align: left;
+    margin-left: auto;
+}
+
+/* Timeline Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #d19e8a;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Animation */
+.timeline-item .timeline-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-item.show .timeline-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Ensures proper bullets */
+}
+
+.timeline-content ul li {
+    display: block; /* Forces each list item to appear on a new line */
+    /* margin-bottom: 1px; Adds spacing between bullet points */
+    font-size: 14px;
+    line-height: 1.5; /* Improves readability */
+    text-align: left;
+}
+
+.timeline-content h3, .timeline-content span, .timeline-content ul {
+    margin-left: 20px; /* Ensured everything aligns properly */
+}
+
+/* PROJECTS */
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(227, 157, 127);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.projects-sidebar {
+    width: 30%;
+    padding: 1.5rem;
+    background-color: rgb(210, 140, 110);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    background: rgb(255, 235, 205);
+}
+
+.project-item.active {
+    background: white;
+    color: black;
+    border-left: 4px solid #003B70;
+}
+
+/* Project Details */
+.projects-content {
+    width: 70%;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details {
+    display: none;
+}
+
+.project-details.active {
+    display: block;
+}
+
+.project-details ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Standard bullet points */
+}
+
+.project-details ul li {
+    display: block; /* Forces each list item to appear on a new line */
+    margin-bottom: 2px; /* Adds spacing between bullet points */
+    font-size: 14px;
+    line-height: 1.5; /* Better spacing for multi-line points */
+    text-align: left;
+}
+
+.project-details h3, .project-details ul, .tech-stack {
+    margin-left: 20px; 
+}
+
+/* Tech Stack */
+.tech-stack {
+    margin-top: 15px;
+}
+
+.tech-stack span {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-wrapper {
+        flex-direction: column;
+    }
+
+    .projects-sidebar {
+        width: 100%;
+    }
+
+    .projects-content {
+        width: 100%;
+    }
+}
+
+/* PUBLICATIONS SECTION */
+/* .publication {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.publication h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.publication p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.publication a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}  */
+
+/* PUBLICATIONS SECTION */
+#publications {
+    background-color: rgb(227, 157, 127); /* Peach Background */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.publication {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.publication h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.publication p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.publication a {
+    color: #003B70;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+} 
+
+/* CONTACT SECTION - FLIP CARD */
+#contact {
+    /* background-color: rgb(227, 157, 127);  */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 600px;
+    perspective: 1000px;
+}
+
+
+
+/* Social Icons */
+.social-icons a {
+    font-size: 28px;
+    margin: 0 15px;
+    color: #003B70;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* CONTACT SECTION */
+/* .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #6c757d;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+    transform: scale(1.2);
+} */ */
+
+
+/* Add peach background to Publications and Contact */
+/* #publications, #contact {
+    background-color: rgb(227, 157, 127); 
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+} */
+
+/* Publication Flip Card */
+/* .publication-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.publication-card {
+    width: 500px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.publication-card:hover {
+    transform: rotateY(180deg);
+} */
+
+/* Front and Back Styles */
+/* .publication-front, .publication-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.publication-front {
+    background: white;
+    color: black;
+}
+
+.publication-back {
+    background: rgb(210, 140, 110); 
+    color: white;
+    transform: rotateY(180deg);
+} */
+
+/* Style for Read Paper Link */
+/* .publication-back a {
+    color: #003B70;
+    text-decoration: underline;
+    font-weight: bold;
+} */
+
+/* Contact Section Styling */
+/* .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+} */
+
+/* Social Icons */
+/* .social-icons a {
+    font-size: 28px;
+    margin: 0 15px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+} */

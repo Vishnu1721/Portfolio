@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+   </head>
+   <body>
+    <!-- <div class="logo">Vishnu <i class="fa fa-street-view" aria-hidden="true"></i></div> -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+              <a href="/" id="navbar__logo">VISHNU SREE</a>
+              <!-- <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div> -->
+              <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experience">Experience</a>
+                </li>
+                <!-- <li class="navbar__item">
+                  <a href="#skills">Skills</a>
+                </li> -->
+                <li class="navbar__item">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#publications">Publications</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Vishnu Sree Chitraju</h1>
+          <h2>SSN '23 | UIC '26</h2>
+          <div class="hero-role">
+            <span id="role"></span>
+          </div>
+          <p class="resume">
+            <!-- <a href="https://drive.google.com/drive/folders/1xhYUc1bvHYvvT-hUFpZavxktXqD5JX7D?dmr=1&ec=wgc-drive-hero-goto/VishnuSree_1501">Resume</a> -->
+            <a href="https://drive.google.com/file/d/1bLOqACKP7TbSI6h1fexnjMH6v9lvptVF/view?usp=sharing" target="_blank">Resume</a>
+
+
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="images/Vishn2.jpeg" alt="Profile photo of Vishnu" />
+        </div>
+      </section>
+
+    <section id="about" class="about">
+      <h1>About Me</h1>
+      <div class="about-container">
+        <div class="about-box">
+          <div class="about-box-left">
+              <p>Hello, I'm Vishnu Sree!!! 👋</p>
+              <p>I'm currently a Master's student at <a href="https://www.uic.edu/"><u>University of Illinois, Chicago</u></a> pursuing a degree in Computer Science.</p>
+              <p>I'm a full-stack developer passionate about developing efficient applications, solving complex problems, and contributing to the digital world's growth.</p>
+              <p>
+                I'm committed to continuous learning and growth, exploring new technologies to stay ahead in the dynamic world of technology.
+              </p>
+              <p>Acknowledged for adept problem-solving and competitive programming skills on <a href="https://leetcode.com/"><u>LeetCode</u></a> 👩‍💻
+              </p>
+          </div>
+          <div class="about-box-right">
+              <div id="icon-cloud">
+                <img src="images/Techstack1.png" alt="Skills Cloud" class="animated-skills">
+              </div>  
+          </div>
+      </div>
+      </div>
+      
+  </section>
+    
+  <!-- Experience Section  -->
+  <!-- <section id="experience">
+    <h1>Experience</h1>
+    <div class="exp-wrapper">
+        <div class="exp-sidebar">
+            <div class="exp-list">
+                <div class="exp-item active" data-role="intern_comcast">
+                    Backend Intern, Comcast
+                </div>
+                <div class="exp-item" data-role="full_comcast">
+                     Full Stack Developer, Comcast
+                </div>
+            </div>
+        </div>
+        <div class="exp-content"> -->
+            <!-- Experience details will be inserted dynamically -->
+        <!-- </div>
+    </div>
+  </section> -->
+
+  <!-- Timeline Section -->
+<section id="experience" class="container">
+  <h2 class="text-center my-5">Experience</h2>
+  <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item">
+          <div class="timeline-icon">
+              <i class="fas fa-server"></i>
+          </div>
+          <div class="timeline-content left">
+              <!-- <h3 style="text-align: center;">Backend Intern @Comcast</h3> -->
+              <h3 style="display: flex; align-items: center; gap: 10px;">
+                Backend Intern @Comcast
+                <img src="images/comcast.png" alt="Comcast Logo" class="comcast-logo">
+              </h3>
+              <span style="text-align: center; font-style: italic;">Jan 2023 - July 2023 | Internship</span>
+              <ul>
+                <li>Designed and implemented microservices architectures, improving system modularity and scalability for enterprise application.</li>
+                <li>Collaborated with cross-functional teams to enhance operational efficiency, delivering user-centric web applications with improved performance by 40%.</li>
+                <li>Managed and optimized SQL databases for web-based applications, ensuring smooth data flow and storage.</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+            <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="timeline-content right">
+            <!-- <h3 style="text-align: center;">Software Developer @Comcast</h3> -->
+            <h3 style="display: flex; align-items: center; gap: 10px;">
+              Software Developer @Comcast
+              <img src="images/comcast.png" alt="Comcast Logo" class="comcast-logo">
+            </h3>
+            <span style="text-align: right;font-style: italic;">Aug 2023 - July 2024 | Full Time</span>
+            <ul>
+              <li>Designed and developed secure, user-friendly dashboards and frontend web applications,optimizing UI responsiveness.</li>
+              <li>Designed and developed microservices-based applications, improving system scalability and modularity.</li>
+              <li>Implemented backend services using Spring Boot and Java, enhancing database query performance by 30%.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+  </section>
+
+    <!--Skills Section-->
+    <!-- <section id="skills">
+      <h1>Skills</h1>
+      <div class="skil">
+          <h2>Skills</h2>
+          <p>Showcase your skills here.</p>
+      </div>
+  </section> -->
+    
+    <!-- Projects Section -->
+    <!-- <section id="projects">
+        <h1>Projects</h1>
+        <div class="proj">
+            <h2>Projects</h2>
+            <p>Showcase your projects here.</p>
+        </div>
+    </section> -->
+
+    <section id="projects" class="container">
+      <h2 class="text-center my-5">Projects</h2>
+      <div class="projects-wrapper">
+          
+          <!-- Sidebar -->
+          <div class="projects-sidebar">
+              <div class="project-item active" data-project="project1">Exploring Reddit Data</div>
+              <div class="project-item" data-project="project2">Online Query System</div>
+              <div class="project-item" data-project="project3">Natural Disaster Analysis</div>
+              <div class="project-item" data-project="project4">Non-Invasive Human Detection</div>
+              
+          </div>
+  
+          <!-- Project Details Grid -->
+          <div class="projects-content">
+              <div id="project1" class="project-details active">
+                  <h3>Exploring Reddit Data</h3>
+                  <ul>
+                      <li>Collected and processed Reddit data using Python and PRAW API, creating clean datasets for engagement
+                        analysis.</li>
+                      <li>Developed machine learning models to classify engagement levels, achieving 98.2% accuracy, and performed
+                        feature importance analysis.</li>
+                      <li>Conducted exploratory data analysis (EDA) and created visualizations with Matplotlib and Seaborn to uncover
+                        insights into user behavior and engagement trends.</li>
+                  </ul>
+                  <div class="tech-stack">
+                      <span>Python</span>
+                      <span>Pandas</span>
+                      <span>Matplotlib</span>
+                      <span>Seaborn</span>
+                      <span>Scikit-Learn</span>
+                  </div>
+              </div>
+
+              <div id="project2" class="project-details">
+                  <h3>Online Query System</h3>
+                  <ul>
+                      <li>Developed a web application using React.js, Node.js, to facilitate academic and campus discussions.</li>
+                      <li>Features include real-time collaboration, secure authentication for interactive discussions.</li>
+                      <li>Designed a scalable, relational database schema with optimized query processing and problem-solving
+                        algorithms to improve performance.</li>
+                  </ul>
+                  <div class="tech-stack">
+                      <span>ReactJS</span>
+                      <span>Node.js</span>
+                      <span>MongoDB</span>
+                      <span>Express</span>
+                      <span>Firebase</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Javascript</span>
+                  </div>
+              </div>
+  
+              <div id="project3" class="project-details">
+                  <h3>Natural Disaster Analysis</h3>
+                  <ul>
+                      <li>Collaborated with IBM to develop an AI-driven application that classifies natural disasters and calculates their
+                        intensity from camera feeds to mitigate ecosystem losses. Achieved an accuracy rate of 88%.</li>
+                      <li>Collaborated with IBM to develop a disaster classification and intensity prediction model using camera feeds.</li>
+                      <li>Leveraged NLP and TensorFlow, achieving an 88% accuracy rate in predictive modeling.
+                      </li>
+                  </ul>
+                  <div class="tech-stack">
+                      <span>ReactJS</span>
+                      <span>Python</span>
+                      <span>MySQL</span>
+                      <span>TensorFlow</span>
+                      <span>Keras</span>
+                  </div>
+              </div>
+  
+              <div id="project4" class="project-details">
+                  <h3>Non-Invasive Human Detection</h3>
+                  <ul>
+                      <li>Designed a machine learning model using Random Forest.</li>
+                      <li>Detects human presence through RF signals.</li>
+                      <li>Implemented feature selection techniques.</li>
+                  </ul>
+                  <div class="tech-stack">
+                      <span>Python</span>
+                      <span>Machine Learning</span>
+                      <span>Random Forest</span>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </section>
+  
+
+    <!-- Publications -->
+    <!-- <section id="publications">
+      <h1>Publications</h1>
+      <div class="pub">
+          <h2>publications</h2>
+          <p>Showcase your publications here.</p>
+      </div>
+    </section> -->
+    <!-- <section id="publications">
+      <h1>Publications</h1>
+      <div class="publication">
+          <h2>Identifying the Probability of Genetic Mutations in Lung Cancer</h2>
+          <p>Developed a deep learning model using Inception V3 to predict genetic mutations, achieving **82.36% accuracy**.</p>
+          <p>Published in a peer-reviewed journal. <a href="#" target="_blank">Read Paper</a></p>
+          <div class="techStack">
+              <span class="tech-badge blue">TensorFlow</span>
+              <span class="tech-badge purple">Deep Learning</span>
+          </div>
+      </div>
+    </section> -->
+
+    <!-- PUBLICATIONS SECTION -->
+    <!-- <section id="publications">
+      <h1>Publications</h1>
+      <div class="publication">
+          <h2>Identifying the Probability of Genetic Mutations in Lung Cancer</h2>
+          <p>Developed a deep learning model using Inception V3 to predict genetic mutations, achieving **82.36% accuracy**.</p>
+          <p>Published in a peer-reviewed journal. <a href="https://systems.enpress-publisher.com/index.php/MIPT/article/view/2712" target="_blank">Read Paper</a></p>
+          <div class="techStack">
+              <span class="tech-badge blue">TensorFlow</span>
+              <span class="tech-badge purple">Deep Learning</span>
+          </div>
+      </div>
+    </section> -->
+
+    <!-- PUBLICATIONS SECTION -->
+    <section id="publications">
+      <h1>Publications</h1>
+      <div class="publication">
+          <h2>Identifying the Probability of Genetic Mutations in Lung Cancer <a href="https://systems.enpress-publisher.com/index.php/MIPT/article/view/2712" target="_blank">Read Paper</a></h2>
+          <p>Developed a deep learning model using Inception V3 to predict genetic mutations, achieved **82.36% accuracy**.</p>
+          <p>Published in a peer-reviewed journal.</p>
+          <div class="techStack">
+              <span class="tech-badge blue">TensorFlow</span>
+              <span class="tech-badge purple">Deep Learning</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION WITH FLIP EFFECT -->
+    <section id="contact">
+      <div class="contact-card">
+          
+              <h3>Let's Connect</h3>
+              <div class="social-icons">
+                  <a href="https://linkedin.com/in/vishnusree-chitraju/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/Vishnu1721" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="mailto:vishnusreec2001@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+          
+      </div>
+    </section>
+    
+    <!-- CONTACT SECTION -->
+    <!-- <section id="contact">
+      <div class="contact-container">
+          <div class="contact-card">
+              <h3>Let's Connect</h3>
+          </div>
+          <div class="social-icons">
+              <a href="https://linkedin.com/in/vishnusree-chitraju/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Vishnu1721" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="mailto:vishnusreec2001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          </div>
+      </div>
+    </section> -->
+    
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <h1>Contact</h1>
+        <div class="cont">
+            <h2>Contact</h2>
+            <p>Place your contact information or a contact form here.</p>
+        </div>
+    </section> -->
+    <!-- <section id="contact">
+      <div class="contact-container">
+          <div class="contact-card">
+              <h3>Let's Connect</h3>
+             
+          </div>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+      </div>
+    </section> -->
+    <!-- <section id="publications">
+      <h1>Publications</h1>
+      <div class="publication-container">
+          <div class="publication-card"> -->
+              <!-- Front Side -->
+              <!-- <div class="publication-front">
+                  <h2>Identifying Genetic Mutations in Lung Cancer</h2>
+                  <p>Deep Learning | Inception V3</p>
+              </div> -->
+              <!-- Back Side -->
+              <!-- <div class="publication-back">
+                  <p>Developed a deep learning model using Inception V3 to predict genetic mutations, achieving **82.36% accuracy**.</p>
+                  <p>Published in a peer-reviewed journal.</p>
+                  <a href="#" target="_blank">Read Paper</a>
+              </div>
+          </div>
+      </div>
+  </section> -->
+  
+  <!-- Contact Section with Social Links -->
+  <!-- <section id="contact">
+      <h1>Let's Connect</h1>
+      <div class="contact-container">
+          <div class="contact-card">
+              <h3>Connect with me</h3>
+          </div>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/vishnusree-chitraju/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Vishnu1721" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:vishnusreec2001@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          </div>
+      </div>
+  </section> -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+    <script src="app.js"></script>
+    <script src="exp.js"></script>
+    <script src="proj.js"></script>
+   </body>
+</html>
